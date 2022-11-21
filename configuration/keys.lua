@@ -97,14 +97,14 @@ awful.keyboard.append_global_keybindings({
 
 	--- Brightness Control
 
-	awful.key({}, "XF86MonBrightnessUp", function()
-		awful.spawn("brightnessctl set 5%+ -q", false)
+	awful.key({mod}, "F12", function()
+		awful.spawn("brightnessctl set 10%+ -q", false)
 		awesome.emit_signal("widget::brightness")
 		awesome.emit_signal("module::brightness_osd:show", true)
 	end, { description = "increase brightness", group = "hotkeys" }),
 
-	awful.key({}, "XF86MonBrightnessDown", function()
-		awful.spawn("brightnessctl set 5%- -q", false)
+	awful.key({mod}, "F11", function()
+		awful.spawn("brightnessctl set 10%- -q", false)
 		awesome.emit_signal("widget::brightness")
 		awesome.emit_signal("module::brightness_osd:show", true)
 	end, { description = "decrease brightness", group = "hotkeys" }),

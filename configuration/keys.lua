@@ -11,12 +11,14 @@ local helpers = require("helpers")
 local apps = require("configuration.apps")
 
 --- Make key easier to call
+
 mod = "Mod4"
 alt = "Mod1"
 ctrl = "Control"
 shift = "Shift"
 
 --- Global key bindings
+
 awful.keyboard.append_global_keybindings({
 
 	-- Terminal
@@ -54,7 +56,6 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ mod }, "F1", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
 
 	--- Client
-  --
 	--- Focus client by direction
 
   awful.key({ mod }, "Up", function()

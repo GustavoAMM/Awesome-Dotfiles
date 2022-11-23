@@ -12,9 +12,9 @@ return {
 		--- Default code editor
 		code_editor = "code",
 		--- Default web browser
-		web_browser = "firefox",
+		web_browser = "brave",
     --- Default private web browser
-    private_browser = "firefox --private-window",
+    private_browser = "brave --incognito",
 		--- Default file manager
 		file_manager = "Thunar",
 		--- Default network manager
